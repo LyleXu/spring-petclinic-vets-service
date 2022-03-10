@@ -5,14 +5,7 @@ spring:
     cache-names: vets
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: http://config-server.default.learning.petclinic.com:8888
   application:
     name: vets-service
----
-spring:
-  config:
-    activate:
-      on-profile: docker
-  cloud:
-    config:
-      uri: http://config-server:8888
+
