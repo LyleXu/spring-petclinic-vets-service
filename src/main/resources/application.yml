@@ -8,4 +8,7 @@ spring:
       uri: http://config-server.default.learning.petclinic.com:8888
   application:
     name: vets-service
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server.default.learning.petclinic.com:8761/eureka/
