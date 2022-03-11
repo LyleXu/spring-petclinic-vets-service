@@ -5,10 +5,10 @@ spring:
     cache-names: vets
   cloud:
     config:
-      uri: http://config-server.default.learning.petclinic.com
+      uri: http://config-server-00001-private
   application:
     name: vets-service
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server.default.learning.petclinic.com/eureka/
+      defaultZone: http://discovery-server-00001-private/eureka
