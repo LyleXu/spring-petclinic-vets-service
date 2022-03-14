@@ -6,13 +6,6 @@ spring:
   cloud:
     config:
       uri: http://config-server-00001-private
-  database:
-    schema: classpath*:db/mysql/schema.sql
-    data: classpath*:db/mysql/data.sql
-    url: jdbc:mysql://${MYSQL_SERVER_FULL_NAME}:3306/${MYSQL_DATABASE_NAME}?useSSL=false
-    username: ${MYSQL_SERVER_ADMIN_LOGIN_NAME}
-    password: ${MYSQL_SERVER_ADMIN_PASSWORD}
-    initializatioin-mode: ALWAYS
   application:
     name: vets-service
 eureka:
