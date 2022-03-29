@@ -3,12 +3,9 @@ spring:
     active: production
   cache:
     cache-names: vets
-  cloud:
-    config:
-      uri: http://config-server-00001-private
   application:
     name: vets-service
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery-server-00001-private/eureka
+      defaultZone: http://eureka-server.service-registry/eureka
