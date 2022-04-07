@@ -3,4 +3,9 @@ spring:
     active: production
   cache:
     cache-names: vets
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, httptrace
 
