@@ -33,9 +33,6 @@ jobs:
 
       - name: Deploy
         run: |
-          az provider register --namespace Microsoft.AppPlatform
-          az provider register --namespace Microsoft.ContainerService
-          
           az account set -s ${{ env.AZURE_SUBSCRIPTION }}
           az config set defaults.group=$RESOURCE_GROUP
           az config set defaults.spring-cloud=$SPRING_CLOUD_INSTANCE_NAME
