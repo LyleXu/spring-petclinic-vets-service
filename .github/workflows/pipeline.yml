@@ -2,7 +2,7 @@ name: AzureSpringCloud
 on: push
 env:
   ASC_PACKAGE_PATH: ${{ github.workspace }}
-  AZURE_SUBSCRIPTION: luxu-public-internal
+  AZURE_SUBSCRIPTION: ${{ secrets.SUBSCRIPTION_NAME }}
 
 jobs:
   deploy_to_production:
