@@ -37,4 +37,4 @@ jobs:
           az config set defaults.group=$RESOURCE_GROUP
           az config set defaults.spring-cloud=$SPRING_CLOUD_INSTANCE_NAME
 
-          az spring-cloud app deploy -n vets-service --jar-path ${{ github.workspace }}/target/spring-petclinic-vets-service-2.5.1.jar
+          az spring-cloud app deploy -n vets-service --source-path ${{ github.workspace }}
