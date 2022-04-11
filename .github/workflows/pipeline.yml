@@ -2,7 +2,7 @@ name: AzureSpringCloud
 on: push
 env:
   AZURE_SUBSCRIPTION: ${{ secrets.SUBSCRIPTION_NAME }}
-  RESOURCE_GROUP: rg-ascdev-test
+  RESOURCE_GROUP: rg-testasc-dev
   SPRING_CLOUD_INSTANCE_NAME: ascpetclinicentdev1
 
 jobs:
