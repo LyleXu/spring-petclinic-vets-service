@@ -17,6 +17,10 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+      - name: Install ASC extension
+        run: |
+          az extension add -s https://ascprivatecli.blob.core.windows.net/enterprise/spring_cloud-2.7.0a1-py3-none-any.whl -y
+          
       - name: deploy to production step with soruce code
         uses: azure/spring-cloud-deploy@v1
         with:
