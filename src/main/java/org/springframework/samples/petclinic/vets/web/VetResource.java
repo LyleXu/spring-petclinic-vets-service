@@ -43,4 +43,14 @@ class VetResource {
     public List<Vet> showResourcesVetList() {
         return vetRepository.findAll();
     }
+
+    @GetMapping("/new")
+    public List<Vet> showNewResourcesVetList() {
+        List<Vet> newVetList = vetRepository.findAll();
+        for (Vet vet : newVetList) {
+            vet.setFirstName("Hello "+ vet.getFirstName());
+        }
+
+        return newVetList;
+    }
 }
