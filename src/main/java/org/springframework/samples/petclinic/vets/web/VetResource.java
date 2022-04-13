@@ -50,7 +50,7 @@ class VetResource {
         for (Vet vet : newVetList) {
             vet.setFirstName("Hello "+ vet.getFirstName());
         }
-
+        System.out.println("Get new vet list successfully!");
         return newVetList;
     }
 }
